@@ -1,0 +1,21 @@
+{
+  "name": "projeto-05---gerenciador-de-podcasts",
+  "version": "1.0.0",
+  "description": "Dentro da trilha de estudos da Digital Innovation One foi proposto um Gerenciador de Podcasts utilizando o runtime Node.js com a Lingugagem TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx --env-file=.env src/server.ts",
+    "start:watch": "tsx --env-file=.env watch src/server.ts",
+    "dist": "tsup src",
+    "start:dist": "npm run dist && --env-file=.env node/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "tsup": "^8.5.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
